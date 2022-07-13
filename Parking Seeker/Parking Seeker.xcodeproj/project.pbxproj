@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEE89D062874E9D2004AFFBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D052874E9D2004AFFBC /* AppDelegate.swift */; };
+		CEE89D082874E9D2004AFFBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D072874E9D2004AFFBC /* SceneDelegate.swift */; };
+		CEE89D0D2874E9D2004AFFBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE89D0B2874E9D2004AFFBC /* Main.storyboard */; };
+		CEE89D102874E9D2004AFFBC /* Parking_Seeker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D0E2874E9D2004AFFBC /* Parking_Seeker.xcdatamodeld */; };
+		CEE89D122874E9D4004AFFBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE89D112874E9D4004AFFBC /* Assets.xcassets */; };
+		CEE89D152874E9D4004AFFBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE89D132874E9D4004AFFBC /* LaunchScreen.storyboard */; };
+		CEE89D202874E9D4004AFFBC /* Parking_SeekerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D1F2874E9D4004AFFBC /* Parking_SeekerTests.swift */; };
+		CEE89D2A2874E9D4004AFFBC /* Parking_SeekerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D292874E9D4004AFFBC /* Parking_SeekerUITests.swift */; };
+		CEE89D2C2874E9D4004AFFBC /* Parking_SeekerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D2B2874E9D4004AFFBC /* Parking_SeekerUITestsLaunchTests.swift */; };
+		CEE89D392874EA7C004AFFBC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D382874EA7C004AFFBC /* WelcomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEE89D1C2874E9D4004AFFBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE89CFA2874E9D2004AFFBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEE89D012874E9D2004AFFBC;
+			remoteInfo = "Parking Seeker";
+		};
+		CEE89D262874E9D4004AFFBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE89CFA2874E9D2004AFFBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEE89D012874E9D2004AFFBC;
+			remoteInfo = "Parking Seeker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEE89D022874E9D2004AFFBC /* Parking Seeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parking Seeker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE89D052874E9D2004AFFBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEE89D072874E9D2004AFFBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEE89D0C2874E9D2004AFFBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEE89D0F2874E9D2004AFFBC /* Parking_Seeker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Parking_Seeker.xcdatamodel; sourceTree = "<group>"; };
+		CEE89D112874E9D4004AFFBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEE89D142874E9D4004AFFBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEE89D162874E9D4004AFFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE89D1B2874E9D4004AFFBC /* Parking SeekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parking SeekerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE89D1F2874E9D4004AFFBC /* Parking_SeekerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking_SeekerTests.swift; sourceTree = "<group>"; };
+		CEE89D252874E9D4004AFFBC /* Parking SeekerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parking SeekerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE89D292874E9D4004AFFBC /* Parking_SeekerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking_SeekerUITests.swift; sourceTree = "<group>"; };
+		CEE89D2B2874E9D4004AFFBC /* Parking_SeekerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking_SeekerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEE89D382874EA7C004AFFBC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEE89CFF2874E9D2004AFFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE89D182874E9D4004AFFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE89D222874E9D4004AFFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEE89CF92874E9D2004AFFBC = {
+			isa = PBXGroup;
+			children = (
+				CEE89D042874E9D2004AFFBC /* Parking Seeker */,
+				CEE89D1E2874E9D4004AFFBC /* Parking SeekerTests */,
+				CEE89D282874E9D4004AFFBC /* Parking SeekerUITests */,
+				CEE89D032874E9D2004AFFBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEE89D032874E9D2004AFFBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEE89D022874E9D2004AFFBC /* Parking Seeker.app */,
+				CEE89D1B2874E9D4004AFFBC /* Parking SeekerTests.xctest */,
+				CEE89D252874E9D4004AFFBC /* Parking SeekerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEE89D042874E9D2004AFFBC /* Parking Seeker */ = {
+			isa = PBXGroup;
+			children = (
+				CEE89D052874E9D2004AFFBC /* AppDelegate.swift */,
+				CEE89D072874E9D2004AFFBC /* SceneDelegate.swift */,
+				CEE89D382874EA7C004AFFBC /* WelcomeViewController.swift */,
+				CEE89D0B2874E9D2004AFFBC /* Main.storyboard */,
+				CEE89D112874E9D4004AFFBC /* Assets.xcassets */,
+				CEE89D132874E9D4004AFFBC /* LaunchScreen.storyboard */,
+				CEE89D162874E9D4004AFFBC /* Info.plist */,
+				CEE89D0E2874E9D2004AFFBC /* Parking_Seeker.xcdatamodeld */,
+			);
+			path = "Parking Seeker";
+			sourceTree = "<group>";
+		};
+		CEE89D1E2874E9D4004AFFBC /* Parking SeekerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEE89D1F2874E9D4004AFFBC /* Parking_SeekerTests.swift */,
+			);
+			path = "Parking SeekerTests";
+			sourceTree = "<group>";
+		};
+		CEE89D282874E9D4004AFFBC /* Parking SeekerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEE89D292874E9D4004AFFBC /* Parking_SeekerUITests.swift */,
+				CEE89D2B2874E9D4004AFFBC /* Parking_SeekerUITestsLaunchTests.swift */,
+			);
+			path = "Parking SeekerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEE89D012874E9D2004AFFBC /* Parking Seeker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE89D2F2874E9D4004AFFBC /* Build configuration list for PBXNativeTarget "Parking Seeker" */;
+			buildPhases = (
+				CEE89CFE2874E9D2004AFFBC /* Sources */,
+				CEE89CFF2874E9D2004AFFBC /* Frameworks */,
+				CEE89D002874E9D2004AFFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Parking Seeker";
+			productName = "Parking Seeker";
+			productReference = CEE89D022874E9D2004AFFBC /* Parking Seeker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEE89D1A2874E9D4004AFFBC /* Parking SeekerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE89D322874E9D4004AFFBC /* Build configuration list for PBXNativeTarget "Parking SeekerTests" */;
+			buildPhases = (
+				CEE89D172874E9D4004AFFBC /* Sources */,
+				CEE89D182874E9D4004AFFBC /* Frameworks */,
+				CEE89D192874E9D4004AFFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEE89D1D2874E9D4004AFFBC /* PBXTargetDependency */,
+			);
+			name = "Parking SeekerTests";
+			productName = "Parking SeekerTests";
+			productReference = CEE89D1B2874E9D4004AFFBC /* Parking SeekerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEE89D242874E9D4004AFFBC /* Parking SeekerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE89D352874E9D4004AFFBC /* Build configuration list for PBXNativeTarget "Parking SeekerUITests" */;
+			buildPhases = (
+				CEE89D212874E9D4004AFFBC /* Sources */,
+				CEE89D222874E9D4004AFFBC /* Frameworks */,
+				CEE89D232874E9D4004AFFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEE89D272874E9D4004AFFBC /* PBXTargetDependency */,
+			);
+			name = "Parking SeekerUITests";
+			productName = "Parking SeekerUITests";
+			productReference = CEE89D252874E9D4004AFFBC /* Parking SeekerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEE89CFA2874E9D2004AFFBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					CEE89D012874E9D2004AFFBC = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					CEE89D1A2874E9D4004AFFBC = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CEE89D012874E9D2004AFFBC;
+					};
+					CEE89D242874E9D4004AFFBC = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CEE89D012874E9D2004AFFBC;
+					};
+				};
+			};
+			buildConfigurationList = CEE89CFD2874E9D2004AFFBC /* Build configuration list for PBXProject "Parking Seeker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEE89CF92874E9D2004AFFBC;
+			productRefGroup = CEE89D032874E9D2004AFFBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEE89D012874E9D2004AFFBC /* Parking Seeker */,
+				CEE89D1A2874E9D4004AFFBC /* Parking SeekerTests */,
+				CEE89D242874E9D4004AFFBC /* Parking SeekerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEE89D002874E9D2004AFFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE89D152874E9D4004AFFBC /* LaunchScreen.storyboard in Resources */,
+				CEE89D122874E9D4004AFFBC /* Assets.xcassets in Resources */,
+				CEE89D0D2874E9D2004AFFBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE89D192874E9D4004AFFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE89D232874E9D4004AFFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEE89CFE2874E9D2004AFFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE89D102874E9D2004AFFBC /* Parking_Seeker.xcdatamodeld in Sources */,
+				CEE89D392874EA7C004AFFBC /* WelcomeViewController.swift in Sources */,
+				CEE89D062874E9D2004AFFBC /* AppDelegate.swift in Sources */,
+				CEE89D082874E9D2004AFFBC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE89D172874E9D4004AFFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE89D202874E9D4004AFFBC /* Parking_SeekerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE89D212874E9D4004AFFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE89D2C2874E9D4004AFFBC /* Parking_SeekerUITestsLaunchTests.swift in Sources */,
+				CEE89D2A2874E9D4004AFFBC /* Parking_SeekerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEE89D1D2874E9D4004AFFBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEE89D012874E9D2004AFFBC /* Parking Seeker */;
+			targetProxy = CEE89D1C2874E9D4004AFFBC /* PBXContainerItemProxy */;
+		};
+		CEE89D272874E9D4004AFFBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEE89D012874E9D2004AFFBC /* Parking Seeker */;
+			targetProxy = CEE89D262874E9D4004AFFBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEE89D0B2874E9D2004AFFBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE89D0C2874E9D2004AFFBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEE89D132874E9D4004AFFBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE89D142874E9D4004AFFBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEE89D2D2874E9D4004AFFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEE89D2E2874E9D4004AFFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEE89D302874E9D4004AFFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Parking Seeker/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parth.Parking-Seeker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEE89D312874E9D4004AFFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Parking Seeker/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parth.Parking-Seeker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEE89D332874E9D4004AFFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parth.Parking-SeekerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parking Seeker.app/Parking Seeker";
+			};
+			name = Debug;
+		};
+		CEE89D342874E9D4004AFFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parth.Parking-SeekerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parking Seeker.app/Parking Seeker";
+			};
+			name = Release;
+		};
+		CEE89D362874E9D4004AFFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parth.Parking-SeekerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Parking Seeker";
+			};
+			name = Debug;
+		};
+		CEE89D372874E9D4004AFFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parth.Parking-SeekerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Parking Seeker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEE89CFD2874E9D2004AFFBC /* Build configuration list for PBXProject "Parking Seeker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE89D2D2874E9D4004AFFBC /* Debug */,
+				CEE89D2E2874E9D4004AFFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE89D2F2874E9D4004AFFBC /* Build configuration list for PBXNativeTarget "Parking Seeker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE89D302874E9D4004AFFBC /* Debug */,
+				CEE89D312874E9D4004AFFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE89D322874E9D4004AFFBC /* Build configuration list for PBXNativeTarget "Parking SeekerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE89D332874E9D4004AFFBC /* Debug */,
+				CEE89D342874E9D4004AFFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE89D352874E9D4004AFFBC /* Build configuration list for PBXNativeTarget "Parking SeekerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE89D362874E9D4004AFFBC /* Debug */,
+				CEE89D372874E9D4004AFFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEE89D0E2874E9D2004AFFBC /* Parking_Seeker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEE89D0F2874E9D2004AFFBC /* Parking_Seeker.xcdatamodel */,
+			);
+			currentVersion = CEE89D0F2874E9D2004AFFBC /* Parking_Seeker.xcdatamodel */;
+			path = Parking_Seeker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CEE89CFA2874E9D2004AFFBC /* Project object */;
+}
