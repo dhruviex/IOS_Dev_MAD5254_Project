@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEA5D5522885BE9300043AC4 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D5512885BE9300043AC4 /* Helper.swift */; };
 		CEE89D062874E9D2004AFFBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D052874E9D2004AFFBC /* AppDelegate.swift */; };
 		CEE89D082874E9D2004AFFBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D072874E9D2004AFFBC /* SceneDelegate.swift */; };
 		CEE89D0D2874E9D2004AFFBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE89D0B2874E9D2004AFFBC /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CEA5D5512885BE9300043AC4 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		CEE89D022874E9D2004AFFBC /* Parking Seeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parking Seeker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE89D052874E9D2004AFFBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE89D072874E9D2004AFFBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				CEE89D132874E9D4004AFFBC /* LaunchScreen.storyboard */,
 				CEE89D162874E9D4004AFFBC /* Info.plist */,
 				CEE89D0E2874E9D2004AFFBC /* Parking_Seeker.xcdatamodeld */,
+				CEA5D5512885BE9300043AC4 /* Helper.swift */,
 			);
 			path = "Parking Seeker";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				CEE89D102874E9D2004AFFBC /* Parking_Seeker.xcdatamodeld in Sources */,
 				CEE89D392874EA7C004AFFBC /* WelcomeViewController.swift in Sources */,
+				CEA5D5522885BE9300043AC4 /* Helper.swift in Sources */,
 				CEE89D062874E9D2004AFFBC /* AppDelegate.swift in Sources */,
 				CEE89D082874E9D2004AFFBC /* SceneDelegate.swift in Sources */,
 			);
