@@ -16,6 +16,7 @@ class WelcomeViewController: UIViewController {
     }
     //added comment for test
     // second commit for test
+    // third commit for test
 
     /*
     // MARK: - Navigation
