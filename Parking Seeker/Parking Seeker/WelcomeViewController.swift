@@ -15,8 +15,7 @@ class WelcomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     //added comment for test
-    // second commit for test
-    // third commit for test
+    //
 
     /*
     // MARK: - Navigation
