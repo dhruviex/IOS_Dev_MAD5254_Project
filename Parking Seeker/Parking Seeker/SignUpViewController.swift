@@ -14,13 +14,5 @@ class SignUpViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = true
-    }
-
-    override func viewDidDisappear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = false
-    }
 
 }
