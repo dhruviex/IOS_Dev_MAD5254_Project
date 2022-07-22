@@ -20,5 +20,9 @@ class ForgotPasswordController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func submitBtnTapped(_ sender: Any) {
+        let OtpVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "OtpViewController") as! OtpViewController
+        self.navigationController?.pushViewController(OtpVC, animated: true)
+    }
     
 }
