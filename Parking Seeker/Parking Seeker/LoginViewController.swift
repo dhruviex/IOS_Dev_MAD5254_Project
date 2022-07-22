@@ -19,8 +19,9 @@ class LoginViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
     }
 
-    override func viewDidDisappear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = false
-    }
 
+    @IBAction func signupBtnTapped(_ sender: Any) {
+        let SignUpVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        self.navigationController?.pushViewController(SignUpVC, animated: true)
+    }
 }

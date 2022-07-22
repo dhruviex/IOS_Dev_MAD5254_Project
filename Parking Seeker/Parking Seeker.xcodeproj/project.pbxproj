@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE93A8F6288A742400E83A24 /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93A8F5288A742400E83A24 /* ChangePasswordController.swift */; };
 		CE940771288A91EF0071575F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE940770288A91EF0071575F /* LoginViewController.swift */; };
+		CEA1AE87288B097100DD579C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1AE86288B097100DD579C /* SignUpViewController.swift */; };
 		CEA5D5522885BE9300043AC4 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D5512885BE9300043AC4 /* Helper.swift */; };
 		CEE89D062874E9D2004AFFBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D052874E9D2004AFFBC /* AppDelegate.swift */; };
 		CEE89D082874E9D2004AFFBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D072874E9D2004AFFBC /* SceneDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		CE93A8F5288A742400E83A24 /* ChangePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
 		CE940770288A91EF0071575F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CEA1AE86288B097100DD579C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CEA5D5512885BE9300043AC4 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		CEE89D022874E9D2004AFFBC /* Parking Seeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parking Seeker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE89D052874E9D2004AFFBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				CEE89D072874E9D2004AFFBC /* SceneDelegate.swift */,
 				CEE89D382874EA7C004AFFBC /* WelcomeViewController.swift */,
 				CE93A8F5288A742400E83A24 /* ChangePasswordController.swift */,
+				CEA1AE86288B097100DD579C /* SignUpViewController.swift */,
 				CE940770288A91EF0071575F /* LoginViewController.swift */,
 				CEE89D0B2874E9D2004AFFBC /* Main.storyboard */,
 				CEE89D112874E9D4004AFFBC /* Assets.xcassets */,
@@ -272,6 +275,7 @@
 			files = (
 				CE940771288A91EF0071575F /* LoginViewController.swift in Sources */,
 				CEE89D102874E9D2004AFFBC /* Parking_Seeker.xcdatamodeld in Sources */,
+				CEA1AE87288B097100DD579C /* SignUpViewController.swift in Sources */,
 				CEE89D392874EA7C004AFFBC /* WelcomeViewController.swift in Sources */,
 				CE93A8F6288A742400E83A24 /* ChangePasswordController.swift in Sources */,
 				CEA5D5522885BE9300043AC4 /* Helper.swift in Sources */,

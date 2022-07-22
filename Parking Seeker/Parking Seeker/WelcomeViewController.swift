@@ -17,7 +17,7 @@ class WelcomeViewController: UIViewController {
    
     @IBAction func startBtnTapped(_ sender: Any) {
         let LoginViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-            self.navigationController?.pushViewController(LoginViewController, animated: true)
+        self.navigationController?.pushViewController(LoginViewController, animated: true)
     }
     
 
