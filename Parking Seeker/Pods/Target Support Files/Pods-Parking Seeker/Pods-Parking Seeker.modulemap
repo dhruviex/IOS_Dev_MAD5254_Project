@@ -1,0 +1,6 @@
+framework module Pods_Parking_Seeker {
+  umbrella header "Pods-Parking Seeker-umbrella.h"
+
+  export *
+  module * { export * }
+}
