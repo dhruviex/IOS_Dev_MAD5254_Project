@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wug-QY-mRf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wug-QY-mRf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -27,15 +27,9 @@
                                             <constraint firstAttribute="height" constant="50" id="IVP-XB-ukm"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="START">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.31436961889999998" green="0.66774410009999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="19" name="Helvetica-Bold"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <buttonConfiguration key="configuration" style="plain" title="START">
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
@@ -47,35 +41,35 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Parking Seeker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="clw-Qq-t36">
                                         <rect key="frame" x="15" y="433" width="384" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your details to continue with our application. We will help you to find your neerest and best suited parking spot." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="EW0-jT-mSL">
                                         <rect key="frame" x="15" y="488" width="384" height="71"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARKING SEEKER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="mU6-Bc-e29">
-                                        <rect key="frame" x="40" y="219" width="334" height="144"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="60"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="aeb-uq-A5b">
+                                        <rect key="frame" x="60" y="245" width="294" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="kwp-Pb-HD4"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" name="app_color"/>
+                                <color key="backgroundColor" name="app_color_bg"/>
                                 <constraints>
                                     <constraint firstItem="EW0-jT-mSL" firstAttribute="top" secondItem="clw-Qq-t36" secondAttribute="bottom" constant="25" id="1Cy-Sz-lCc"/>
+                                    <constraint firstItem="clw-Qq-t36" firstAttribute="top" secondItem="aeb-uq-A5b" secondAttribute="bottom" constant="60" id="6tN-tT-pY4"/>
                                     <constraint firstItem="clw-Qq-t36" firstAttribute="centerY" secondItem="5zT-NV-kbh" secondAttribute="centerY" id="7L6-Mh-iOd"/>
                                     <constraint firstAttribute="trailing" secondItem="clw-Qq-t36" secondAttribute="trailing" constant="15" id="MJ7-KB-YCp"/>
                                     <constraint firstItem="Ot2-fI-GMH" firstAttribute="leading" secondItem="5zT-NV-kbh" secondAttribute="leading" constant="15" id="TEe-6u-ilf"/>
-                                    <constraint firstItem="mU6-Bc-e29" firstAttribute="leading" secondItem="5zT-NV-kbh" secondAttribute="leading" constant="40" id="TEe-VD-rW3"/>
                                     <constraint firstItem="EW0-jT-mSL" firstAttribute="leading" secondItem="5zT-NV-kbh" secondAttribute="leading" constant="15" id="VwM-Un-9jw"/>
                                     <constraint firstItem="clw-Qq-t36" firstAttribute="leading" secondItem="5zT-NV-kbh" secondAttribute="leading" constant="15" id="ZUY-iR-xW2"/>
-                                    <constraint firstItem="clw-Qq-t36" firstAttribute="top" secondItem="mU6-Bc-e29" secondAttribute="bottom" constant="70" id="keK-2Y-0Fs"/>
-                                    <constraint firstAttribute="trailing" secondItem="mU6-Bc-e29" secondAttribute="trailing" constant="40" id="nHA-8j-tcA"/>
+                                    <constraint firstItem="aeb-uq-A5b" firstAttribute="leading" secondItem="5zT-NV-kbh" secondAttribute="leading" constant="60" id="cnE-27-A9I"/>
                                     <constraint firstAttribute="trailing" secondItem="EW0-jT-mSL" secondAttribute="trailing" constant="15" id="oaa-i9-9Zc"/>
                                     <constraint firstAttribute="bottom" secondItem="Ot2-fI-GMH" secondAttribute="bottom" constant="50" id="tZn-uA-hfX"/>
+                                    <constraint firstAttribute="trailing" secondItem="aeb-uq-A5b" secondAttribute="trailing" constant="60" id="u1R-aZ-w7T"/>
                                     <constraint firstAttribute="trailing" secondItem="Ot2-fI-GMH" secondAttribute="trailing" constant="15" id="xuQ-h5-6Va"/>
                                 </constraints>
                             </view>
@@ -103,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kd2-FY-g8S">
-                                <rect key="frame" x="61" y="44" width="202" height="26.5"/>
+                                <rect key="frame" x="58.5" y="44" width="204.5" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="kd2-FY-g8S" secondAttribute="height" multiplier="61:8" id="Coq-BU-39X"/>
                                 </constraints>
@@ -112,7 +106,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1r-Ho-jE2">
-                                <rect key="frame" x="10" y="252" width="171" height="20.5"/>
+                                <rect key="frame" x="10" y="252.5" width="171" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="171" id="BCO-3z-ymh"/>
                                     <constraint firstAttribute="height" constant="20.5" id="Wlv-YX-asv"/>
@@ -122,13 +116,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1v-zf-vWL">
-                                <rect key="frame" x="10" y="142.5" width="130" height="18"/>
+                                <rect key="frame" x="10" y="143" width="130" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LMH-my-86T">
-                                <rect key="frame" x="10" y="185" width="391" height="40"/>
+                                <rect key="frame" x="10" y="185.5" width="391" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="391" id="2ah-gj-YyE"/>
@@ -138,7 +132,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aAF-uf-IS9">
-                                <rect key="frame" x="9" y="295" width="391" height="40"/>
+                                <rect key="frame" x="9" y="295.5" width="391" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="hkV-t0-gzE"/>
@@ -147,7 +141,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXK-X5-H0d">
-                                <rect key="frame" x="15" y="49" width="46" height="17.5"/>
+                                <rect key="frame" x="15" y="49" width="43.5" height="18"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
                             </button>
@@ -598,8 +592,8 @@
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="logo" width="874" height="858"/>
-        <namedColor name="app_color">
-            <color red="0.31372549019607843" green="0.66666666666666663" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="app_color_bg">
+            <color red="0.93333333333333335" green="0.81176470588235294" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
