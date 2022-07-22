@@ -252,7 +252,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOu-6G-5yK">
-                                                <rect key="frame" x="0.0" y="225" width="384" height="55"/>
+                                                <rect key="frame" x="0.0" y="225" width="384" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bd1-53-J8i">
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="55"/>
@@ -265,9 +265,9 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="55" id="UeV-dY-KV6"/>
+                                                    <constraint firstAttribute="height" constant="50" id="UeV-dY-KV6"/>
                                                     <constraint firstAttribute="trailing" secondItem="Bd1-53-J8i" secondAttribute="trailing" id="YX6-Mm-Rsi"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Bd1-53-J8i" secondAttribute="bottom" id="hF0-Yp-BtV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Bd1-53-J8i" secondAttribute="bottom" constant="-5" id="hF0-Yp-BtV"/>
                                                     <constraint firstItem="Bd1-53-J8i" firstAttribute="leading" secondItem="oOu-6G-5yK" secondAttribute="leading" id="jY1-Vt-cg3"/>
                                                     <constraint firstItem="Bd1-53-J8i" firstAttribute="top" secondItem="oOu-6G-5yK" secondAttribute="top" id="tjH-7e-SG4"/>
                                                 </constraints>
@@ -289,7 +289,7 @@
                                             <constraint firstItem="oOu-6G-5yK" firstAttribute="leading" secondItem="DWj-Oa-ZMV" secondAttribute="leading" id="ibu-oo-PH6"/>
                                             <constraint firstItem="Opr-JR-CFq" firstAttribute="top" secondItem="VYJ-g7-BDp" secondAttribute="bottom" constant="25" id="lBM-MX-3gQ"/>
                                             <constraint firstItem="Opr-JR-CFq" firstAttribute="leading" secondItem="DWj-Oa-ZMV" secondAttribute="leading" id="siX-Uf-Fza"/>
-                                            <constraint firstAttribute="bottom" secondItem="oOu-6G-5yK" secondAttribute="bottom" id="vSt-FF-CpL"/>
+                                            <constraint firstAttribute="bottom" secondItem="oOu-6G-5yK" secondAttribute="bottom" constant="5" id="vSt-FF-CpL"/>
                                             <constraint firstItem="VYJ-g7-BDp" firstAttribute="top" secondItem="DWj-Oa-ZMV" secondAttribute="top" id="wsy-x7-FDD"/>
                                         </constraints>
                                     </view>
