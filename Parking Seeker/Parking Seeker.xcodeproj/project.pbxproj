@@ -26,6 +26,7 @@
 		CEE89D2A2874E9D4004AFFBC /* Parking_SeekerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D292874E9D4004AFFBC /* Parking_SeekerUITests.swift */; };
 		CEE89D2C2874E9D4004AFFBC /* Parking_SeekerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D2B2874E9D4004AFFBC /* Parking_SeekerUITestsLaunchTests.swift */; };
 		CEE89D392874EA7C004AFFBC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D382874EA7C004AFFBC /* WelcomeViewController.swift */; };
+		CEFFB1B5288B6E4E00238FCD /* AddVehicleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFB1B4288B6E4E00238FCD /* AddVehicleController.swift */; };
 		DE4450DEC9EA013AA9DF1E16 /* Pods_Parking_SeekerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E5A8526BA03FB61B149DC1 /* Pods_Parking_SeekerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		CEE89D292874E9D4004AFFBC /* Parking_SeekerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking_SeekerUITests.swift; sourceTree = "<group>"; };
 		CEE89D2B2874E9D4004AFFBC /* Parking_SeekerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking_SeekerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CEE89D382874EA7C004AFFBC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CEFFB1B4288B6E4E00238FCD /* AddVehicleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleController.swift; sourceTree = "<group>"; };
 		DE68FA0E1655D7A305F50FFC /* Pods-Parking Seeker-Parking SeekerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Seeker-Parking SeekerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Parking Seeker-Parking SeekerUITests/Pods-Parking Seeker-Parking SeekerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6E5A8526BA03FB61B149DC1 /* Pods_Parking_SeekerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_SeekerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,7 +119,6 @@
 				54F26CC80C01C92A347818F4 /* Pods-Parking SeekerTests.debug.xcconfig */,
 				63CEE84D02AE177F191971DD /* Pods-Parking SeekerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,6 +155,7 @@
 				CEA1AE88288B145500DD579C /* ForgotPasswordController.swift */,
 				CE940770288A91EF0071575F /* LoginViewController.swift */,
 				949E6004288B2F3D00C2B5D4 /* OtpViewController.swift */,
+				CEFFB1B4288B6E4E00238FCD /* AddVehicleController.swift */,
 				CEE89D0B2874E9D2004AFFBC /* Main.storyboard */,
 				CE933D07288B55B200F53F68 /* GoogleService-Info.plist */,
 				CEE89D112874E9D4004AFFBC /* Assets.xcassets */,
@@ -436,6 +438,7 @@
 				CE940771288A91EF0071575F /* LoginViewController.swift in Sources */,
 				CEE89D102874E9D2004AFFBC /* Parking_Seeker.xcdatamodeld in Sources */,
 				CEA1AE87288B097100DD579C /* SignUpViewController.swift in Sources */,
+				CEFFB1B5288B6E4E00238FCD /* AddVehicleController.swift in Sources */,
 				CEE89D392874EA7C004AFFBC /* WelcomeViewController.swift in Sources */,
 				CEA1AE89288B145500DD579C /* ForgotPasswordController.swift in Sources */,
 				CE93A8F6288A742400E83A24 /* ChangePasswordController.swift in Sources */,
