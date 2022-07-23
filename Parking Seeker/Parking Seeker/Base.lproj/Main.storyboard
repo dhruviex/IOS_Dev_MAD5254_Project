@@ -114,10 +114,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWF-mG-r7g">
                                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title=""/>
                                                         <connections>
-                                                            <action selector="backBtnTapped:" destination="M5l-4V-vXi" eventType="touchUpInside" id="eSA-sm-wKI"/>
-                                                            <action selector="backBtnTapped:" destination="MjS-Tx-IQY" eventType="touchUpInside" id="wHC-LC-fVa"/>
+                                                            <action selector="backBtnTapped:" destination="M5l-4V-vXi" eventType="touchUpInside" id="0jJ-hJ-cif"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
