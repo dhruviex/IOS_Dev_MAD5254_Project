@@ -293,7 +293,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmR-XM-HRK">
                                                         <rect key="frame" x="0.0" y="30" width="384" height="45"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sdj-Aw-Jge">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sdj-Aw-Jge" customClass="JRDropDown">
                                                                 <rect key="frame" x="10" y="0.0" width="364" height="45"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -386,6 +386,9 @@
                             <constraint firstItem="BBI-5o-fbW" firstAttribute="leading" secondItem="5cc-SM-oBT" secondAttribute="leading" id="kz0-Z4-Q5B"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="selectVehicleDropDown" destination="Sdj-Aw-Jge" id="VgD-QA-07B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dpu-Uy-SPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

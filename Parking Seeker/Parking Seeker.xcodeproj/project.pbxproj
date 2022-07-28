@@ -26,6 +26,7 @@
 		CEE89D2A2874E9D4004AFFBC /* Parking_SeekerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D292874E9D4004AFFBC /* Parking_SeekerUITests.swift */; };
 		CEE89D2C2874E9D4004AFFBC /* Parking_SeekerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D2B2874E9D4004AFFBC /* Parking_SeekerUITestsLaunchTests.swift */; };
 		CEE89D392874EA7C004AFFBC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D382874EA7C004AFFBC /* WelcomeViewController.swift */; };
+		CEF916902890AA30003BEE6F /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF9168F2890AA30003BEE6F /* iOSDropDown.framework */; };
 		CEFFB1B5288B6E4E00238FCD /* AddVehicleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFB1B4288B6E4E00238FCD /* AddVehicleController.swift */; };
 		DE4450DEC9EA013AA9DF1E16 /* Pods_Parking_SeekerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E5A8526BA03FB61B149DC1 /* Pods_Parking_SeekerTests.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +77,7 @@
 		CEE89D292874E9D4004AFFBC /* Parking_SeekerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking_SeekerUITests.swift; sourceTree = "<group>"; };
 		CEE89D2B2874E9D4004AFFBC /* Parking_SeekerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking_SeekerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CEE89D382874EA7C004AFFBC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CEF9168F2890AA30003BEE6F /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFFB1B4288B6E4E00238FCD /* AddVehicleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleController.swift; sourceTree = "<group>"; };
 		DE68FA0E1655D7A305F50FFC /* Pods-Parking Seeker-Parking SeekerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Seeker-Parking SeekerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Parking Seeker-Parking SeekerUITests/Pods-Parking Seeker-Parking SeekerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6E5A8526BA03FB61B149DC1 /* Pods_Parking_SeekerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_SeekerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF916902890AA30003BEE6F /* iOSDropDown.framework in Frameworks */,
 				55CCB62A32F2FD0B7D5D41A7 /* Pods_Parking_Seeker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +190,7 @@
 		D4DF9ECE66B347146AF90305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEF9168F2890AA30003BEE6F /* iOSDropDown.framework */,
 				AD481CAEB768EDC6DF4CCF28 /* Pods_Parking_Seeker.framework */,
 				B412AECBE24F9D5A0599A8FC /* Pods_Parking_Seeker_Parking_SeekerUITests.framework */,
 				E6E5A8526BA03FB61B149DC1 /* Pods_Parking_SeekerTests.framework */,
