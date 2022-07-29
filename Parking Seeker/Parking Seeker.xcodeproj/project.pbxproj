@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		49E83AFC9DBD1D848AE10193 /* Pods_Parking_Seeker_Parking_SeekerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B412AECBE24F9D5A0599A8FC /* Pods_Parking_Seeker_Parking_SeekerUITests.framework */; };
 		55CCB62A32F2FD0B7D5D41A7 /* Pods_Parking_Seeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD481CAEB768EDC6DF4CCF28 /* Pods_Parking_Seeker.framework */; };
+		949D575F2894321F0080C8B3 /* BookingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D575E2894321F0080C8B3 /* BookingCollectionViewCell.swift */; };
 		949E6005288B2F3D00C2B5D4 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E6004288B2F3D00C2B5D4 /* OtpViewController.swift */; };
 		CE933D08288B55B200F53F68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE933D07288B55B200F53F68 /* GoogleService-Info.plist */; };
 		CE93A8F6288A742400E83A24 /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93A8F5288A742400E83A24 /* ChangePasswordController.swift */; };
@@ -57,6 +58,7 @@
 		63CEE84D02AE177F191971DD /* Pods-Parking SeekerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking SeekerTests.release.xcconfig"; path = "Target Support Files/Pods-Parking SeekerTests/Pods-Parking SeekerTests.release.xcconfig"; sourceTree = "<group>"; };
 		63D5BB58338BEDA0A9F9A187 /* Pods-Parking Seeker-Parking SeekerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Seeker-Parking SeekerUITests.release.xcconfig"; path = "Target Support Files/Pods-Parking Seeker-Parking SeekerUITests/Pods-Parking Seeker-Parking SeekerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		78A7FC977C7D80A5923510AA /* Pods-Parking Seeker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Seeker.release.xcconfig"; path = "Target Support Files/Pods-Parking Seeker/Pods-Parking Seeker.release.xcconfig"; sourceTree = "<group>"; };
+		949D575E2894321F0080C8B3 /* BookingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCollectionViewCell.swift; sourceTree = "<group>"; };
 		949E6004288B2F3D00C2B5D4 /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
 		AD481CAEB768EDC6DF4CCF28 /* Pods_Parking_Seeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_Seeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B412AECBE24F9D5A0599A8FC /* Pods_Parking_Seeker_Parking_SeekerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_Seeker_Parking_SeekerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +174,7 @@
 				CEF98AC928938D9C00F7992B /* BookingsViewController.swift */,
 				CEF98ACB28938DB100F7992B /* MyAccountController.swift */,
 				CEE89D0B2874E9D2004AFFBC /* Main.storyboard */,
+				949D575E2894321F0080C8B3 /* BookingCollectionViewCell.swift */,
 				CE933D07288B55B200F53F68 /* GoogleService-Info.plist */,
 				CEE89D112874E9D4004AFFBC /* Assets.xcassets */,
 				CEE89D132874E9D4004AFFBC /* LaunchScreen.storyboard */,
@@ -460,6 +463,7 @@
 				CEF98ACA28938D9C00F7992B /* BookingsViewController.swift in Sources */,
 				CEE89D392874EA7C004AFFBC /* WelcomeViewController.swift in Sources */,
 				CEA1AE89288B145500DD579C /* ForgotPasswordController.swift in Sources */,
+				949D575F2894321F0080C8B3 /* BookingCollectionViewCell.swift in Sources */,
 				CE93A8F6288A742400E83A24 /* ChangePasswordController.swift in Sources */,
 				CEA5D5522885BE9300043AC4 /* Helper.swift in Sources */,
 				CEE89D062874E9D2004AFFBC /* AppDelegate.swift in Sources */,
