@@ -26,7 +26,14 @@ class AddVehicleController: UIViewController {
         }
     }
     
-
+    @IBAction func addVehicleBtnTapped(_ sender: Any) {
+        //assigning tab view controller as root view controller
+        let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
+        let initialViewController = self.storyboard!.instantiateViewController(withIdentifier: "TabBarController")
+        sceneDelegate!.window?.rootViewController = initialViewController
+        sceneDelegate!.window?.makeKeyAndVisible()
+    }
+    
     @IBAction func backBtnTapped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
