@@ -261,6 +261,9 @@
                                                             <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                                             <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="addVehicleBtnTapped:" destination="M5l-4V-vXi" eventType="touchUpInside" id="Iem-YD-uSN"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -393,6 +396,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dpu-Uy-SPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-288" y="779"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8Et-SD-amR">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVH-En-m3q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Auc-s2-m2g" customClass="TabBarController" customModule="Parking_Seeker" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qjN-CY-pTj"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="yQ3-Vt-3PL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="app_color_dark"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5gd-g2-Bfi" kind="relationship" relationship="viewControllers" id="3QJ-2Z-b6r"/>
+                        <segue destination="vT4-eh-54J" kind="relationship" relationship="viewControllers" id="Get-bR-v02"/>
+                        <segue destination="BOe-7x-KFi" kind="relationship" relationship="viewControllers" id="sKf-uP-0ed"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-1235" y="2290"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="5ge-J0-0MU">
+            <objects>
+                <navigationController id="5gd-g2-Bfi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="ic_tab_home" id="hCq-fJ-XJH"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m5w-Ea-SVD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nrO-Vx-JWF" kind="relationship" relationship="rootViewController" id="5kC-E4-waC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPo-US-SHd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-288" y="1529"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="02y-OL-iRA">
+            <objects>
+                <viewController restorationIdentifier="HomeViewController" storyboardIdentifier="HomeViewController" id="nrO-Vx-JWF" customClass="HomeViewController" customModule="Parking_Seeker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K8J-ME-jgM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPt-0s-Rk4">
+                                <rect key="frame" x="168" y="423" width="78" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IB7-sH-3jy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h3k-ec-bGp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SPt-0s-Rk4" firstAttribute="centerX" secondItem="K8J-ME-jgM" secondAttribute="centerX" id="b6S-As-8dr"/>
+                            <constraint firstItem="SPt-0s-Rk4" firstAttribute="centerY" secondItem="K8J-ME-jgM" secondAttribute="centerY" id="usz-CX-STF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tEh-Mc-WMm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnT-lW-QoT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="577" y="1529"/>
         </scene>
         <!--Change Password Controller-->
         <scene sceneID="FHy-sR-ohU">
@@ -1980,12 +2054,114 @@
             </objects>
             <point key="canvasLocation" x="4055" y="9"/>
         </scene>
+        <!--Bookings-->
+        <scene sceneID="aF0-FH-WA7">
+            <objects>
+                <navigationController id="vT4-eh-54J" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bookings" image="ic_tab_bookings" id="MtG-Yh-sn8">
+                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YKo-U9-Hdv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gee-NA-JPM" kind="relationship" relationship="rootViewController" id="RXe-R7-Bbs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TDF-d4-O0Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-288" y="2290"/>
+        </scene>
+        <!--My Account-->
+        <scene sceneID="JP4-dB-vZq">
+            <objects>
+                <navigationController id="BOe-7x-KFi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Account" image="ic_tab_user" id="tYw-wX-CuE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vmK-4v-MFJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ny6-Zs-5WW" kind="relationship" relationship="rootViewController" id="Ne9-6Z-7Bq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qvt-25-gfQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-288" y="3070"/>
+        </scene>
+        <!--Bookings View Controller-->
+        <scene sceneID="fv6-IU-ZoW">
+            <objects>
+                <viewController storyboardIdentifier="BookingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="light" id="Gee-NA-JPM" customClass="BookingsViewController" customModule="Parking_Seeker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dCq-4D-6tn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bookings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGl-6P-IKQ">
+                                <rect key="frame" x="147" y="423" width="120.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ojq-7H-JaT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XW6-0p-Bat"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zGl-6P-IKQ" firstAttribute="centerY" secondItem="dCq-4D-6tn" secondAttribute="centerY" id="Bst-bl-M6u"/>
+                            <constraint firstItem="zGl-6P-IKQ" firstAttribute="centerX" secondItem="dCq-4D-6tn" secondAttribute="centerX" id="ujb-K8-hb6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aRV-x2-7aQ"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8vb-g9-Shy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="577" y="2290"/>
+        </scene>
+        <!--My Account Controller-->
+        <scene sceneID="Law-NU-2LF">
+            <objects>
+                <viewController storyboardIdentifier="MyAccountController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ny6-Zs-5WW" customClass="MyAccountController" customModule="Parking_Seeker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nkg-Jb-REU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALp-m1-0ZJ">
+                                <rect key="frame" x="153" y="423" width="108.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jdJ-jf-IaJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H43-4J-4Jl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ALp-m1-0ZJ" firstAttribute="centerX" secondItem="nkg-Jb-REU" secondAttribute="centerX" id="FIi-o9-AhS"/>
+                            <constraint firstItem="ALp-m1-0ZJ" firstAttribute="centerY" secondItem="nkg-Jb-REU" secondAttribute="centerY" id="pyz-fC-37m"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="seO-8w-EIG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPT-u0-9Dt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="577" y="3070"/>
+        </scene>
     </scenes>
     <resources>
         <image name="btn_apple_login" width="424" height="76"/>
         <image name="btn_google_signin" width="370" height="72"/>
         <image name="ic_back_white" width="26" height="26"/>
         <image name="ic_dropdown" width="96" height="96"/>
+        <image name="ic_tab_bookings" width="24" height="24"/>
+        <image name="ic_tab_home" width="24" height="24"/>
+        <image name="ic_tab_user" width="24" height="24"/>
         <image name="logo" width="874" height="858"/>
         <image name="logo_banner" width="874" height="373"/>
         <namedColor name="app_color_dark">
