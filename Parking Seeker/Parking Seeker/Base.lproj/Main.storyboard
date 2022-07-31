@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wug-QY-mRf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wug-QY-mRf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -400,7 +400,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="8Et-SD-amR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rVH-En-m3q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Auc-s2-m2g" customClass="TabBarController" customModule="Parking_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="qjN-CY-pTj"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="yQ3-Vt-3PL">
@@ -417,6 +416,7 @@
                         <segue destination="BOe-7x-KFi" kind="relationship" relationship="viewControllers" id="sKf-uP-0ed"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVH-En-m3q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1235" y="2290"/>
         </scene>
@@ -2098,21 +2098,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bookings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGl-6P-IKQ">
-                                <rect key="frame" x="147" y="423" width="120.5" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AIs-QS-rPU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" name="app_color_light"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Ojq-7H-JaT"/>
+                                    <constraint firstAttribute="width" secondItem="AIs-QS-rPU" secondAttribute="height" multiplier="414:769" id="svD-uI-DcM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XW6-0p-Bat"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="app_color_dark"/>
                         <constraints>
-                            <constraint firstItem="zGl-6P-IKQ" firstAttribute="centerY" secondItem="dCq-4D-6tn" secondAttribute="centerY" id="Bst-bl-M6u"/>
-                            <constraint firstItem="zGl-6P-IKQ" firstAttribute="centerX" secondItem="dCq-4D-6tn" secondAttribute="centerX" id="ujb-K8-hb6"/>
+                            <constraint firstItem="AIs-QS-rPU" firstAttribute="top" secondItem="dCq-4D-6tn" secondAttribute="top" constant="44" id="7Ai-JC-5Zy"/>
+                            <constraint firstItem="AIs-QS-rPU" firstAttribute="leading" secondItem="XW6-0p-Bat" secondAttribute="leading" id="GYM-Nk-7VA"/>
+                            <constraint firstItem="AIs-QS-rPU" firstAttribute="trailing" secondItem="XW6-0p-Bat" secondAttribute="trailing" id="M3F-ej-h7y"/>
+                            <constraint firstAttribute="bottom" secondItem="AIs-QS-rPU" secondAttribute="bottom" constant="83" id="f2a-vK-JCW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aRV-x2-7aQ"/>
