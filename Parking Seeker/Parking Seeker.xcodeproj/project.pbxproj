@@ -22,6 +22,7 @@
 		CEA1AE87288B097100DD579C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1AE86288B097100DD579C /* SignUpViewController.swift */; };
 		CEA1AE89288B145500DD579C /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1AE88288B145500DD579C /* ForgotPasswordController.swift */; };
 		CEA5D5522885BE9300043AC4 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D5512885BE9300043AC4 /* Helper.swift */; };
+		CEDD7211289998C60069123E /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD7210289998C60069123E /* ContactUsViewController.swift */; };
 		CEE89D062874E9D2004AFFBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D052874E9D2004AFFBC /* AppDelegate.swift */; };
 		CEE89D082874E9D2004AFFBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE89D072874E9D2004AFFBC /* SceneDelegate.swift */; };
 		CEE89D0D2874E9D2004AFFBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE89D0B2874E9D2004AFFBC /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		CEA1AE86288B097100DD579C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CEA1AE88288B145500DD579C /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 		CEA5D5512885BE9300043AC4 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		CEDD7210289998C60069123E /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		CEE89D022874E9D2004AFFBC /* Parking Seeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parking Seeker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE89D052874E9D2004AFFBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE89D072874E9D2004AFFBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				CE99FB12289968F6008C2ECF /* UpdateProfileController.swift */,
 				CE99FB1428998988008C2ECF /* SettingsViewController.swift */,
 				CE2AE9CA2899926A006B8905 /* AboutViewController.swift */,
+				CEDD7210289998C60069123E /* ContactUsViewController.swift */,
 				CEE89D0B2874E9D2004AFFBC /* Main.storyboard */,
 				CE933D07288B55B200F53F68 /* GoogleService-Info.plist */,
 				CEE89D112874E9D4004AFFBC /* Assets.xcassets */,
@@ -497,6 +500,7 @@
 				CE99FB0F2898D473008C2ECF /* BookingDetailController.swift in Sources */,
 				CEE89D082874E9D2004AFFBC /* SceneDelegate.swift in Sources */,
 				CEF98AC828934B4300F7992B /* HomeViewController.swift in Sources */,
+				CEDD7211289998C60069123E /* ContactUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
