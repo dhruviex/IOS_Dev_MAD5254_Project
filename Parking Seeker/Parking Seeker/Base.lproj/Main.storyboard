@@ -3092,6 +3092,88 @@
             </objects>
             <point key="canvasLocation" x="576.81159420289862" y="3069.6428571428569"/>
         </scene>
+        <!--My Profile View Controller-->
+        <scene sceneID="5rA-uN-Qdj">
+            <objects>
+                <viewController storyboardIdentifier="MyProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4QA-kO-KLB" customClass="MyProfileViewController" customModule="Parking_Seeker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WR1-1p-cAr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjh-wh-XA2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BKb-FE-UWl">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back_white" translatesAutoresizingMaskIntoConstraints="NO" id="7av-T5-yQK">
+                                                <rect key="frame" x="15" y="15" width="40" height="40"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhn-75-ugd">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="backBtnTapped:" destination="4QA-kO-KLB" eventType="touchUpInside" id="M1a-B8-mPr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="BKb-FE-UWl" secondAttribute="height" multiplier="1:1" id="AEM-iP-5cy"/>
+                                            <constraint firstItem="Uhn-75-ugd" firstAttribute="leading" secondItem="BKb-FE-UWl" secondAttribute="leading" id="Bgx-xy-fdZ"/>
+                                            <constraint firstItem="7av-T5-yQK" firstAttribute="leading" secondItem="BKb-FE-UWl" secondAttribute="leading" constant="15" id="C69-hP-6Zj"/>
+                                            <constraint firstAttribute="bottom" secondItem="7av-T5-yQK" secondAttribute="bottom" constant="15" id="Qk1-kE-AaH"/>
+                                            <constraint firstItem="7av-T5-yQK" firstAttribute="top" secondItem="BKb-FE-UWl" secondAttribute="top" constant="15" id="Y3h-al-Tcu"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uhn-75-ugd" secondAttribute="trailing" id="ZdB-yW-10s"/>
+                                            <constraint firstAttribute="trailing" secondItem="7av-T5-yQK" secondAttribute="trailing" constant="15" id="fvj-Ag-MhL"/>
+                                            <constraint firstAttribute="bottom" secondItem="Uhn-75-ugd" secondAttribute="bottom" id="mF2-5H-rKy"/>
+                                            <constraint firstItem="Uhn-75-ugd" firstAttribute="top" secondItem="BKb-FE-UWl" secondAttribute="top" id="uEb-bZ-oo4"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="bJc-7Q-WeN">
+                                        <rect key="frame" x="70" y="0.0" width="274" height="70"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="27"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="app_color_dark"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BKb-FE-UWl" secondAttribute="bottom" id="3Tk-3J-v7A"/>
+                                    <constraint firstItem="BKb-FE-UWl" firstAttribute="leading" secondItem="cjh-wh-XA2" secondAttribute="leading" id="Fd9-Vm-jz4"/>
+                                    <constraint firstAttribute="height" constant="70" id="GEv-tU-apS"/>
+                                    <constraint firstAttribute="trailing" secondItem="bJc-7Q-WeN" secondAttribute="trailing" constant="70" id="TTd-LU-zpg"/>
+                                    <constraint firstItem="bJc-7Q-WeN" firstAttribute="top" secondItem="cjh-wh-XA2" secondAttribute="top" id="XDo-cx-ZmY"/>
+                                    <constraint firstItem="BKb-FE-UWl" firstAttribute="top" secondItem="cjh-wh-XA2" secondAttribute="top" id="eEv-Ul-82w"/>
+                                    <constraint firstAttribute="bottom" secondItem="bJc-7Q-WeN" secondAttribute="bottom" id="fCg-93-FlD"/>
+                                    <constraint firstItem="bJc-7Q-WeN" firstAttribute="leading" secondItem="BKb-FE-UWl" secondAttribute="trailing" id="g58-sx-jFk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOF-CJ-zwN">
+                                <rect key="frame" x="0.0" y="114" width="414" height="699"/>
+                                <color key="backgroundColor" name="app_color_light"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gTX-HL-sS7"/>
+                        <color key="backgroundColor" name="app_color_dark"/>
+                        <constraints>
+                            <constraint firstItem="gTX-HL-sS7" firstAttribute="trailing" secondItem="cjh-wh-XA2" secondAttribute="trailing" id="8RC-Ji-LCV"/>
+                            <constraint firstItem="gTX-HL-sS7" firstAttribute="trailing" secondItem="uOF-CJ-zwN" secondAttribute="trailing" id="C1N-8k-gBA"/>
+                            <constraint firstItem="cjh-wh-XA2" firstAttribute="leading" secondItem="WR1-1p-cAr" secondAttribute="leading" id="Vrz-F4-Sl6"/>
+                            <constraint firstItem="gTX-HL-sS7" firstAttribute="bottom" secondItem="uOF-CJ-zwN" secondAttribute="bottom" id="VzO-Pf-Az6"/>
+                            <constraint firstItem="uOF-CJ-zwN" firstAttribute="leading" secondItem="gTX-HL-sS7" secondAttribute="leading" id="aaE-Ml-qPM"/>
+                            <constraint firstItem="uOF-CJ-zwN" firstAttribute="top" secondItem="cjh-wh-XA2" secondAttribute="bottom" id="jzl-jN-LvG"/>
+                            <constraint firstItem="cjh-wh-XA2" firstAttribute="top" secondItem="gTX-HL-sS7" secondAttribute="top" id="vMm-Pv-izD"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QLZ-P9-3NB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1436" y="3070"/>
+        </scene>
     </scenes>
     <resources>
         <image name="btn_apple_login" width="424" height="76"/>
