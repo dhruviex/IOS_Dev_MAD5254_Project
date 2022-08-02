@@ -7,8 +7,13 @@
 
 import UIKit
 
-class BookingsViewController: UIViewController {
-
+class BookingsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    let screenWidth = UIScreen.main.bounds.width
+    
+    let test_booking_titles = ["Fairview Mall", "Scarborough Town Centre", "Parkway Mall","Fairview Mall", "Scarborough Town Centre", "Parkway Mall"]
+    
+    @IBOutlet weak var bookingCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,14 +21,19 @@ class BookingsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //collection view datasource methods
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        test_booking_titles.count
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookingViewCell", for: indexPath) as! BookingViewCell
+        cell.booking_title.text = test_booking_titles[indexPath.row]
+//        cell.booking_cell_view.cornerRadius = 20
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            return CGSize(width: screenWidth - 20, height: 180)
+    }
 }
