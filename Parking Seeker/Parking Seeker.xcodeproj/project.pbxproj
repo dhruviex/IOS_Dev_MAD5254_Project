@@ -10,6 +10,7 @@
 		49E83AFC9DBD1D848AE10193 /* Pods_Parking_Seeker_Parking_SeekerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B412AECBE24F9D5A0599A8FC /* Pods_Parking_Seeker_Parking_SeekerUITests.framework */; };
 		55CCB62A32F2FD0B7D5D41A7 /* Pods_Parking_Seeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD481CAEB768EDC6DF4CCF28 /* Pods_Parking_Seeker.framework */; };
 		949E6005288B2F3D00C2B5D4 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E6004288B2F3D00C2B5D4 /* OtpViewController.swift */; };
+		CE2AE9CB2899926A006B8905 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2AE9CA2899926A006B8905 /* AboutViewController.swift */; };
 		CE933D08288B55B200F53F68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE933D07288B55B200F53F68 /* GoogleService-Info.plist */; };
 		CE93A8F6288A742400E83A24 /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93A8F5288A742400E83A24 /* ChangePasswordController.swift */; };
 		CE940771288A91EF0071575F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE940770288A91EF0071575F /* LoginViewController.swift */; };
@@ -66,6 +67,7 @@
 		AD481CAEB768EDC6DF4CCF28 /* Pods_Parking_Seeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_Seeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B412AECBE24F9D5A0599A8FC /* Pods_Parking_Seeker_Parking_SeekerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parking_Seeker_Parking_SeekerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F4576080A0B8304C84535F /* Pods-Parking Seeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking Seeker.debug.xcconfig"; path = "Target Support Files/Pods-Parking Seeker/Pods-Parking Seeker.debug.xcconfig"; sourceTree = "<group>"; };
+		CE2AE9CA2899926A006B8905 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		CE933D07288B55B200F53F68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE93A8F5288A742400E83A24 /* ChangePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
 		CE940770288A91EF0071575F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				CE99FB102898F3B7008C2ECF /* MyProfileViewController.swift */,
 				CE99FB12289968F6008C2ECF /* UpdateProfileController.swift */,
 				CE99FB1428998988008C2ECF /* SettingsViewController.swift */,
+				CE2AE9CA2899926A006B8905 /* AboutViewController.swift */,
 				CEE89D0B2874E9D2004AFFBC /* Main.storyboard */,
 				CE933D07288B55B200F53F68 /* GoogleService-Info.plist */,
 				CEE89D112874E9D4004AFFBC /* Assets.xcassets */,
@@ -476,6 +479,7 @@
 				CE99FB13289968F6008C2ECF /* UpdateProfileController.swift in Sources */,
 				949E6005288B2F3D00C2B5D4 /* OtpViewController.swift in Sources */,
 				CEF98ACC28938DB100F7992B /* MyAccountController.swift in Sources */,
+				CE2AE9CB2899926A006B8905 /* AboutViewController.swift in Sources */,
 				CE99FB1528998988008C2ECF /* SettingsViewController.swift in Sources */,
 				CE940771288A91EF0071575F /* LoginViewController.swift in Sources */,
 				CEF98AD0289390A300F7992B /* TabBarController.swift in Sources */,
