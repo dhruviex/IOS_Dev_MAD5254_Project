@@ -3961,6 +3961,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="backBtnTapped:" destination="vww-06-v5z" eventType="touchUpInside" id="lXZ-ox-pJb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
