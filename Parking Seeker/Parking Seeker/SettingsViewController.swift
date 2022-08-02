@@ -20,4 +20,8 @@ class SettingsViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
 
+    @IBAction func changePasswordTapped(_ sender: Any) {
+        let ChangePasswordVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "ChangePasswordController") as! ChangePasswordController
+        self.navigationController?.pushViewController(ChangePasswordVC, animated: true)
+    }
 }
