@@ -39,7 +39,8 @@ class MyAccountController: UIViewController {
     }
     
     @IBAction func contactUsBtnTapped(_ sender: Any) {
-        
+        let ContactUsVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "ContactUsViewController") as! ContactUsViewController
+        self.navigationController?.pushViewController(ContactUsVC, animated: true)
     }
     
     @IBAction func aboutBtnTapped(_ sender: Any) {
