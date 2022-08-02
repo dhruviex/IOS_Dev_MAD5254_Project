@@ -2775,6 +2775,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="myProfileBtnTapped:" destination="ny6-Zs-5WW" eventType="touchUpInside" id="pjh-LG-lSL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2822,6 +2825,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <action selector="paymentDetailsBtnTapped:" destination="ny6-Zs-5WW" eventType="touchUpInside" id="B5Z-27-THl"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2869,6 +2875,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="settingsBtnTapped:" destination="ny6-Zs-5WW" eventType="touchUpInside" id="ttH-KW-NMu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2916,6 +2925,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="helpBtnTapped:" destination="ny6-Zs-5WW" eventType="touchUpInside" id="ZSB-iz-p2c"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2963,6 +2975,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="contactUsBtnTapped:" destination="ny6-Zs-5WW" eventType="touchUpInside" id="cif-91-Wsc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -3010,6 +3025,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="aboutBtnTapped:" destination="ny6-Zs-5WW" eventType="touchUpInside" id="gTf-Wm-LGR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
