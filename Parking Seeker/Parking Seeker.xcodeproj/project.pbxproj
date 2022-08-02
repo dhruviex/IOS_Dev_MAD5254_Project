@@ -17,6 +17,7 @@
 		CE99FB0F2898D473008C2ECF /* BookingDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99FB0E2898D473008C2ECF /* BookingDetailController.swift */; };
 		CE99FB112898F3B7008C2ECF /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99FB102898F3B7008C2ECF /* MyProfileViewController.swift */; };
 		CE99FB13289968F6008C2ECF /* UpdateProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99FB12289968F6008C2ECF /* UpdateProfileController.swift */; };
+		CE99FB1528998988008C2ECF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99FB1428998988008C2ECF /* SettingsViewController.swift */; };
 		CEA1AE87288B097100DD579C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1AE86288B097100DD579C /* SignUpViewController.swift */; };
 		CEA1AE89288B145500DD579C /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1AE88288B145500DD579C /* ForgotPasswordController.swift */; };
 		CEA5D5522885BE9300043AC4 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D5512885BE9300043AC4 /* Helper.swift */; };
@@ -72,6 +73,7 @@
 		CE99FB0E2898D473008C2ECF /* BookingDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailController.swift; sourceTree = "<group>"; };
 		CE99FB102898F3B7008C2ECF /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		CE99FB12289968F6008C2ECF /* UpdateProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileController.swift; sourceTree = "<group>"; };
+		CE99FB1428998988008C2ECF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CEA1AE86288B097100DD579C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CEA1AE88288B145500DD579C /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 		CEA5D5512885BE9300043AC4 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				CEF98ACB28938DB100F7992B /* MyAccountController.swift */,
 				CE99FB102898F3B7008C2ECF /* MyProfileViewController.swift */,
 				CE99FB12289968F6008C2ECF /* UpdateProfileController.swift */,
+				CE99FB1428998988008C2ECF /* SettingsViewController.swift */,
 				CEE89D0B2874E9D2004AFFBC /* Main.storyboard */,
 				CE933D07288B55B200F53F68 /* GoogleService-Info.plist */,
 				CEE89D112874E9D4004AFFBC /* Assets.xcassets */,
@@ -473,6 +476,7 @@
 				CE99FB13289968F6008C2ECF /* UpdateProfileController.swift in Sources */,
 				949E6005288B2F3D00C2B5D4 /* OtpViewController.swift in Sources */,
 				CEF98ACC28938DB100F7992B /* MyAccountController.swift in Sources */,
+				CE99FB1528998988008C2ECF /* SettingsViewController.swift in Sources */,
 				CE940771288A91EF0071575F /* LoginViewController.swift in Sources */,
 				CEF98AD0289390A300F7992B /* TabBarController.swift in Sources */,
 				CE99FB0D2898BE49008C2ECF /* BookingViewCell.swift in Sources */,
