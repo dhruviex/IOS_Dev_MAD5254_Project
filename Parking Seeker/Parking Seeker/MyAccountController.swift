@@ -26,7 +26,8 @@ class MyAccountController: UIViewController {
     }
     
     @IBAction func paymentDetailsBtnTapped(_ sender: Any) {
-        
+        let PaymentListVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "PaymentListController") as! PaymentListController
+        self.navigationController?.pushViewController(PaymentListVC, animated: true)
     }
     
     @IBAction func settingsBtnTapped(_ sender: Any) {
