@@ -30,7 +30,8 @@ class MyAccountController: UIViewController {
     }
     
     @IBAction func settingsBtnTapped(_ sender: Any) {
-        
+        let SettingsVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
+        self.navigationController?.pushViewController(SettingsVC, animated: true)
     }
     
     @IBAction func helpBtnTapped(_ sender: Any) {
