@@ -43,7 +43,8 @@ class PaymentListController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     @IBAction func addNewCardBtnTap(_ sender: Any) {
-        
+        let AddPaymentVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "AddPaymentController") as! AddPaymentController
+        self.navigationController?.pushViewController(AddPaymentVC, animated: true)
     }
     
 }
