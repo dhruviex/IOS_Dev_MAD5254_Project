@@ -18,5 +18,10 @@ class MyProfileViewController: UIViewController {
     @IBAction func backBtnTapped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-
+    
+    @IBAction func updateBtnTapped(_ sender: Any) {
+        let UpdateProfileVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "UpdateProfileController") as! UpdateProfileController
+        self.navigationController?.pushViewController(UpdateProfileVC, animated: true)
+    }
+    
 }
