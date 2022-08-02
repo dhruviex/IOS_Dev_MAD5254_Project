@@ -17,7 +17,8 @@ class MyAccountController: UIViewController {
     
     //button action for navigation
     @IBAction func myProfileBtnTapped(_ sender: Any) {
-        
+        let MyProfileVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "MyProfileViewController") as! MyProfileViewController
+        self.navigationController?.pushViewController(MyProfileVC, animated: true)
     }
     
     @IBAction func paymentDetailsBtnTapped(_ sender: Any) {
