@@ -3940,10 +3940,10 @@
             </objects>
             <point key="canvasLocation" x="3176.811594202899" y="3069.6428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="Il3-Vi-BN0">
             <objects>
-                <viewController id="vww-06-v5z" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vww-06-v5z" customClass="AboutViewController" customModule="Parking_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NI7-bb-Xp8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3997,7 +3997,80 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD0-u7-Dhf">
                                 <rect key="frame" x="0.0" y="114" width="414" height="699"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nly-eO-J4s">
+                                        <rect key="frame" x="15" y="30" width="384" height="280"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEVELOPER TEAM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="fYf-Mp-Fz0">
+                                                <rect key="frame" x="0.0" y="10" width="384" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="b1x-P9-bk5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AuU-wu-R0y">
+                                                <rect key="frame" x="0.0" y="70" width="384" height="190"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alisha Das" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="CQ9-4V-BTb">
+                                                        <rect key="frame" x="147" y="0.0" width="90" height="38"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deeksith Reddy Gangula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="L0G-AJ-RbL">
+                                                        <rect key="frame" x="85.5" y="38" width="213.5" height="38"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dhruv Bakshi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="xvb-RT-rnD">
+                                                        <rect key="frame" x="135" y="76" width="114.5" height="38"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mayank Sanjeev Nibhoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="ajR-79-B8G">
+                                                        <rect key="frame" x="83.5" y="114" width="217.5" height="38"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parth Kantibhai Vekariya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="Kgs-j1-IXa">
+                                                        <rect key="frame" x="88" y="152" width="208.5" height="38"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="AuU-wu-R0y" secondAttribute="bottom" constant="20" id="BoA-DZ-v9z"/>
+                                            <constraint firstAttribute="trailing" secondItem="fYf-Mp-Fz0" secondAttribute="trailing" id="KXR-za-7Z1"/>
+                                            <constraint firstAttribute="trailing" secondItem="AuU-wu-R0y" secondAttribute="trailing" id="RTk-tE-hU6"/>
+                                            <constraint firstAttribute="height" constant="280" id="YM5-bh-Tc1"/>
+                                            <constraint firstItem="fYf-Mp-Fz0" firstAttribute="top" secondItem="nly-eO-J4s" secondAttribute="top" constant="10" id="doO-qu-x8k"/>
+                                            <constraint firstItem="AuU-wu-R0y" firstAttribute="top" secondItem="fYf-Mp-Fz0" secondAttribute="bottom" constant="20" id="i4b-Uz-6ek"/>
+                                            <constraint firstItem="AuU-wu-R0y" firstAttribute="leading" secondItem="nly-eO-J4s" secondAttribute="leading" id="qgG-Hk-C2K"/>
+                                            <constraint firstItem="fYf-Mp-Fz0" firstAttribute="leading" secondItem="nly-eO-J4s" secondAttribute="leading" id="vmx-az-eOS"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="app_color_light"/>
+                                <constraints>
+                                    <constraint firstItem="nly-eO-J4s" firstAttribute="leading" secondItem="cD0-u7-Dhf" secondAttribute="leading" constant="15" id="SD8-w3-Crw"/>
+                                    <constraint firstItem="nly-eO-J4s" firstAttribute="top" secondItem="cD0-u7-Dhf" secondAttribute="top" constant="30" id="mRg-gK-x48"/>
+                                    <constraint firstAttribute="trailing" secondItem="nly-eO-J4s" secondAttribute="trailing" constant="15" id="tK8-ZX-2YL"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LLg-b3-wDq"/>
