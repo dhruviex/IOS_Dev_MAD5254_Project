@@ -8,15 +8,23 @@
 import UIKit
 import GoogleMaps
 
-class HomeViewController: UIViewController, GMSMapViewDelegate {
-
+class HomeViewController: UIViewController, GMSMapViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    let screenWidth = UIScreen.main.bounds.width
+    
+    let test_place_titles = ["Fairview Mall", "Scarborough Town Centre", "Parkway Mall","Fairview Mall", "Scarborough Town Centre", "Parkway Mall"]
+    
     @IBOutlet weak var mapView: GMSMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let camera = GMSCameraPosition.camera(withLatitude: 43.7627453, longitude: -79.316767, zoom: 15.0)
         mapView.camera = camera
         showMarker(position: camera.target)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     //custom marker for test
@@ -44,8 +52,22 @@ class HomeViewController: UIViewController, GMSMapViewDelegate {
         return view
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = true
+    
+    
+    //collection view datasource methods
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        test_place_titles.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlaceViewCell", for: indexPath) as! PlaceViewCell
+        cell.place_title.text = test_place_titles[indexPath.row]
+//        cell.place_details_btn.addTarget(self, action: #selector(self.viewDetailsTap(sender:), for: .touchUpInside)
+        return cell
+    }
+                                         
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: screenWidth - 40, height: 180)
     }
 
 }
