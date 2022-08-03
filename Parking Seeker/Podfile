@@ -10,6 +10,7 @@ target 'Parking Seeker' do
 	pod 'FirebaseAuth'
 	pod 'FirebaseFirestore'
 	pod 'iOSDropDown'
+	pod 'GoogleMaps'
 
   target 'Parking SeekerTests' do
     inherit! :search_paths

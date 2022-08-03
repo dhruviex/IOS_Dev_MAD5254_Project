@@ -679,6 +679,11 @@ PODS:
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleMaps (7.0.0):
+    - GoogleMaps/Maps (= 7.0.0)
+  - GoogleMaps/Base (7.0.0)
+  - GoogleMaps/Maps (7.0.0):
+    - GoogleMaps/Base
   - GoogleUtilities/AppDelegateSwizzler (7.7.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -769,6 +774,7 @@ DEPENDENCIES:
   - FirebaseAnalytics
   - FirebaseAuth
   - FirebaseFirestore
+  - GoogleMaps
   - iOSDropDown
 
 SPEC REPOS:
@@ -784,6 +790,7 @@ SPEC REPOS:
     - FirebaseInstallations
     - GoogleAppMeasurement
     - GoogleDataTransport
+    - GoogleMaps
     - GoogleUtilities
     - "gRPC-C++"
     - gRPC-Core
@@ -806,6 +813,7 @@ SPEC CHECKSUMS:
   FirebaseInstallations: 54b40022cb06e462740c9f2b9fbe38b5e78a825a
   GoogleAppMeasurement: b907bdad775b6975a8108762345b2cfbf1a93c37
   GoogleDataTransport: 5fffe35792f8b96ec8d6775f5eccd83c998d5a3b
+  GoogleMaps: 6e9c923ca035989709fcb5771544fda4cc5fa2a4
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   "gRPC-C++": 9675f953ace2b3de7c506039d77be1f2e77a8db2
   gRPC-Core: 943e491cb0d45598b0b0eb9e910c88080369290b
@@ -816,6 +824,6 @@ SPEC CHECKSUMS:
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
 
-PODFILE CHECKSUM: 4b384a82d6029bfbb99af4df69f67ad4288679b1
+PODFILE CHECKSUM: e22558f8a02f5997f52d130d48583d12413a3f43
 
 COCOAPODS: 1.11.2

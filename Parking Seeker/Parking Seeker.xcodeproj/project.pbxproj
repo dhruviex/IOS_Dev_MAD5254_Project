@@ -260,6 +260,7 @@
 				CEE89CFF2874E9D2004AFFBC /* Frameworks */,
 				CEE89D002874E9D2004AFFBC /* Resources */,
 				E0B3BA886A483D88C9297D0A /* [CP] Embed Pods Frameworks */,
+				AC0EB7DE87F5A5CB93693F01 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -298,6 +299,7 @@
 				CEE89D222874E9D4004AFFBC /* Frameworks */,
 				CEE89D232874E9D4004AFFBC /* Resources */,
 				8A796E7C1C0EF7832B48AD25 /* [CP] Embed Pods Frameworks */,
+				C0581E81C8D60790104F2080 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -462,6 +464,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC0EB7DE87F5A5CB93693F01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Parking Seeker/Pods-Parking Seeker-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Parking Seeker/Pods-Parking Seeker-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Parking Seeker/Pods-Parking Seeker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0581E81C8D60790104F2080 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Parking Seeker-Parking SeekerUITests/Pods-Parking Seeker-Parking SeekerUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Parking Seeker-Parking SeekerUITests/Pods-Parking Seeker-Parking SeekerUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Parking Seeker-Parking SeekerUITests/Pods-Parking Seeker-Parking SeekerUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E0B3BA886A483D88C9297D0A /* [CP] Embed Pods Frameworks */ = {
