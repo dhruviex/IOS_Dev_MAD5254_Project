@@ -62,8 +62,13 @@ class HomeViewController: UIViewController, GMSMapViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlaceViewCell", for: indexPath) as! PlaceViewCell
         cell.place_title.text = test_place_titles[indexPath.row]
-//        cell.place_details_btn.addTarget(self, action: #selector(self.viewDetailsTap(sender:), for: .touchUpInside)
+        cell.place_details_btn.addTarget(self, action: #selector(viewDetailsTap), for: .touchUpInside)
         return cell
+    }
+                                
+    @objc func viewDetailsTap() -> Void {
+        let ParkingDetailVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "ParkingDetailController") as! ParkingDetailController
+        self.navigationController?.pushViewController(ParkingDetailVC, animated: true)
     }
                                          
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
