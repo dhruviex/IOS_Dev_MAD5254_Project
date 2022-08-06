@@ -13,12 +13,12 @@ class HomeViewController: UIViewController, GMSMapViewDelegate, UICollectionView
     
     let test_place_titles = ["Fairview Mall", "Scarborough Town Centre", "Parkway Mall","Fairview Mall", "Scarborough Town Centre", "Parkway Mall"]
     
+    
     @IBOutlet weak var mapView: GMSMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let camera = GMSCameraPosition.camera(withLatitude: 43.7627453, longitude: -79.316767, zoom: 15.0)
+        let camera = GMSCameraPosition.camera(withLatitude: 43.7627453, longitude: -79.316767, zoom: 11.0)
         mapView.camera = camera
         showMarker(position: camera.target)
     }
@@ -32,7 +32,32 @@ class HomeViewController: UIViewController, GMSMapViewDelegate, UICollectionView
         let marker = GMSMarker()
         marker.position = position
         marker.map = mapView
+        
+        let marker2=GMSMarker()
+        marker2.position = CLLocationCoordinate2DMake(43.7627453, -79.316767)
+        marker2.title = "...."
+        marker2.map = mapView
+
+
+//marker for Scarborough town center
+        let marker3=GMSMarker()
+        marker3.position = CLLocationCoordinate2DMake(43.7647453, -79.316767)
+        marker3.title = "Scarborough Town Centre"
+        marker3.snippet = "....."
+        marker3.map = mapView
+        
+        var London2=GMSMarker()
+        London2.position = CLLocationCoordinate2DMake(43.775550295637, -79.257411777904)
+        London2.title = "...."
+        London2.snippet = "....."
+        London2.map = mapView
     }
+    
+    
+    
+    
+    
+    
 
     //test detail box
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
