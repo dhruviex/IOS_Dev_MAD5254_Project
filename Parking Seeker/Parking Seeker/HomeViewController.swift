@@ -34,28 +34,44 @@ class HomeViewController: UIViewController, GMSMapViewDelegate, UICollectionView
         marker.map = mapView
         
         let marker2=GMSMarker()
-        marker2.position = CLLocationCoordinate2DMake(43.7627453, -79.316767)
-        marker2.title = "...."
+        marker2.position = CLLocationCoordinate2DMake(43.779709, -79.345032)
+        marker2.title = "Fairview Mall"
         marker2.map = mapView
 
 
 //marker for Scarborough town center
         let marker3=GMSMarker()
-        marker3.position = CLLocationCoordinate2DMake(43.7647453, -79.316767)
+        marker3.position = CLLocationCoordinate2DMake(43.775223, -79.257148)
         marker3.title = "Scarborough Town Centre"
-        marker3.snippet = "....."
         marker3.map = mapView
         
-        var London2=GMSMarker()
-        London2.position = CLLocationCoordinate2DMake(43.775550295637, -79.257411777904)
-        London2.title = "...."
-        London2.snippet = "....."
-        London2.map = mapView
+        let marker4=GMSMarker()
+        marker4.position = CLLocationCoordinate2DMake(43.7573, -79.3116)
+        marker4.title = "Parkway Mall"
+        marker4.map = mapView
+        
+        let marker5=GMSMarker()
+        marker5.position = CLLocationCoordinate2DMake(43.7732, -79.3361)
+        marker5.title = "Lambton College In Toronto"
+        marker5.map = mapView
+        
+        let marker6=GMSMarker()
+        marker6.position = CLLocationCoordinate2DMake(43.6426, -79.3871)
+        marker6.title = "CN Tower"
+        marker6.map = mapView
+        
+        let marker7=GMSMarker()
+        marker7.position = CLLocationCoordinate2DMake(43.7169, -79.3389)
+        marker7.title = "Ontario Science Centre"
+        marker7.map = mapView
+        
+        let marker8=GMSMarker()
+        marker8.position = CLLocationCoordinate2DMake(43.6677, -79.3948)
+        marker8.title = "Royal Ontario Museum"
+        marker8.map = mapView
+        
+        
     }
-    
-    
-    
-    
     
     
 
