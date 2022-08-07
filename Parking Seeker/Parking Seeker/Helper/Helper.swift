@@ -8,6 +8,13 @@
 import UIKit
 import Foundation
 
+class Helper {
+    static func showAlertAction(title: String, message: String, viewController: UIViewController){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        viewController.present(alert, animated: true, completion: nil)
+    }
+}
 extension UIView {
 
     @IBInspectable var shadow: Bool {

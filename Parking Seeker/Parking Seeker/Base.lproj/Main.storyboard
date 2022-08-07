@@ -2632,6 +2632,10 @@
                             <constraint firstAttribute="bottom" secondItem="SuC-EV-zqX" secondAttribute="bottom" id="rJL-Sf-sJg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTxtField" destination="Q4q-xl-c1f" id="EJd-3l-YgR"/>
+                        <outlet property="passwordTxtField" destination="Hfd-vg-cs2" id="Ywg-q6-Aze"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yzj-m7-a0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2811,6 +2815,9 @@
                                                                             <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                                                             <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="signupBtnTapped:" destination="xSB-Xz-d9K" eventType="touchUpInside" id="3cq-xs-WHU"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -3162,6 +3169,13 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="confirmPasswordTxtField" destination="uOJ-rv-1To" id="U2e-DL-tGn"/>
+                        <outlet property="emailTxtField" destination="NyL-id-Fmi" id="4fs-nx-YCY"/>
+                        <outlet property="fullNameTxtField" destination="6yi-wh-2ey" id="NBK-hz-GdU"/>
+                        <outlet property="mobileTxtField" destination="Mt3-bg-d5P" id="RAx-sr-gD2"/>
+                        <outlet property="passwordTxtField" destination="DEm-VZ-lvD" id="tSr-CQ-NT3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OGe-dH-ONY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
