@@ -26,5 +26,7 @@
         <string>googlechromes</string>
         <string>comgooglemaps</string>
     </array>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app needs your location to show directions of parking space.</string>
 </dict>
 </plist>

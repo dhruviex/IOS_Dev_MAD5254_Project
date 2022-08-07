@@ -738,6 +738,7 @@
                                                     <outlet property="place_address" destination="7Xl-wh-did" id="H7t-u6-WIZ"/>
                                                     <outlet property="place_details_btn" destination="aTY-MR-bfb" id="xM1-P6-VfW"/>
                                                     <outlet property="place_price" destination="sX2-t5-8Ce" id="9jj-w7-JbP"/>
+                                                    <outlet property="place_spots" destination="AwP-oz-cM2" id="b6K-N7-Wx6"/>
                                                     <outlet property="place_title" destination="gXB-bJ-kvg" id="Cqz-ep-7wi"/>
                                                 </connections>
                                             </collectionViewCell>
@@ -778,6 +779,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="Efo-AH-lgB" id="rHT-gl-guv"/>
+                        <outlet property="placesCollectionView" destination="Bxh-L7-OhY" id="iLj-o4-XrK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wnT-lW-QoT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

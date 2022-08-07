@@ -13,4 +13,5 @@ class PlaceViewCell: UICollectionViewCell {
     @IBOutlet weak var place_price: UILabel!
     @IBOutlet weak var place_address: UILabel!
     @IBOutlet weak var place_details_btn: UIButton!
+    @IBOutlet weak var place_spots: UILabel!
 }
