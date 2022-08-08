@@ -46,18 +46,22 @@ class SignUpViewController: UIViewController {
                 if (mobileText != "") {
                     if (passwordText != "") {
                         if (confirmPasswordText != "") {
-                            self.activityIndicator.startAnimating()
-                            Auth.auth().createUser(withEmail: emailText!, password: passwordText!) {(authResult, error) in
-                                self.activityIndicator.stopAnimating()
-                                if let user = authResult?.user {
-                                    print(user)
-                                    ref.child("users").child(user.uid).setValue(["fullname": fullName])
-                                    
-                                    let AddVehicleVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "AddVehicleController") as! AddVehicleController
-                                    self.navigationController?.pushViewController(AddVehicleVC, animated: true)
-                                } else {
-                                    print("ERROR")
+                            if (passwordText == confirmPasswordText) {
+                                self.activityIndicator.startAnimating()
+                                Auth.auth().createUser(withEmail: emailText!, password: passwordText!) {(authResult, error) in
+                                    self.activityIndicator.stopAnimating()
+                                    if let user = authResult?.user {
+                                        print(user)
+                                        ref.child("users").child(user.uid).setValue(["fullname": fullName])
+                                        
+                                        let AddVehicleVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "AddVehicleController") as! AddVehicleController
+                                        self.navigationController?.pushViewController(AddVehicleVC, animated: true)
+                                    } else {
+                                        print("ERROR")
+                                    }
                                 }
+                            } else {
+                                Helper.showAlertAction(title: "Alert", message: "Please enter same password ", viewController: self)
                             }
                         } else {
                             Helper.showAlertAction(title: "Alert", message: "Please enter your confirm password", viewController: self)
