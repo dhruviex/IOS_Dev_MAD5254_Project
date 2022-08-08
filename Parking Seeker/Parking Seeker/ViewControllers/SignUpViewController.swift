@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
 
@@ -31,6 +32,9 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signupBtnTapped(_ sender: Any) {
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        
         let fullName = self.fullNameTxtField.text
         let emailText = self.emailTxtField.text
         let mobileText = self.mobileTxtField.text
@@ -47,6 +51,10 @@ class SignUpViewController: UIViewController {
                                 self.activityIndicator.stopAnimating()
                                 if let user = authResult?.user {
                                     print(user)
+                                    ref.child("users").child(user.uid).setValue(["fullname": fullName])
+                                    
+                                    let AddVehicleVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "AddVehicleController") as! AddVehicleController
+                                    self.navigationController?.pushViewController(AddVehicleVC, animated: true)
                                 } else {
                                     print("ERROR")
                                 }

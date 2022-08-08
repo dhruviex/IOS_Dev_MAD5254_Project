@@ -29,28 +29,24 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginBtnTapped(_ sender: Any) {
-        let AddVehicleVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "AddVehicleController") as! AddVehicleController
-        self.navigationController?.pushViewController(AddVehicleVC, animated: true)
-//        let emailText = self.emailTxtField.text
-//        let passwordText = self.passwordTxtField.text
-//            if (emailText != "") {
-//            if (passwordText != "") {
-//                print(emailText!)
-//                print(passwordText!)
-//                self.activityIndicator.startAnimating()
-//                Auth.auth().signIn(withEmail: emailText!, password: passwordText!) { (result, error) in
-//                    self.activityIndicator.stopAnimating()
-//                    print("RESULT---->")
-//                    print(result as Any)
-//                    let AddVehicleVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "AddVehicleController") as! AddVehicleController
-//                    self.navigationController?.pushViewController(AddVehicleVC, animated: true)
-//                }
-//            } else {
-//                Helper.showAlertAction(title: "Alert", message: "Please enter your password", viewController: self)
-//            }
-//            } else {
-//                Helper.showAlertAction(title: "Alert", message: "Please enter your email", viewController: self)
-//            }
+        
+        let emailText = self.emailTxtField.text
+        let passwordText = self.passwordTxtField.text
+            if (emailText != "") {
+            if (passwordText != "") {
+                self.activityIndicator.startAnimating()
+                Auth.auth().signIn(withEmail: emailText!, password: passwordText!) { (result, error) in
+                    self.activityIndicator.stopAnimating()
+                    
+                    let AddVehicleVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "AddVehicleController") as! AddVehicleController
+                    self.navigationController?.pushViewController(AddVehicleVC, animated: true)
+                }
+            } else {
+                Helper.showAlertAction(title: "Alert", message: "Please enter your password", viewController: self)
+            }
+            } else {
+                Helper.showAlertAction(title: "Alert", message: "Please enter your email", viewController: self)
+            }
     }
     
 
