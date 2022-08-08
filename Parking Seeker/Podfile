@@ -12,6 +12,7 @@ target 'Parking Seeker' do
 	pod 'iOSDropDown'
 	pod 'GoogleMaps'
 	pod 'IQKeyboardManagerSwift'
+	pod 'Firebase/Database'
 
   target 'Parking SeekerTests' do
     inherit! :search_paths
