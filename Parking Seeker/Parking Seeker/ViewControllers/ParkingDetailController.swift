@@ -31,6 +31,14 @@ class ParkingDetailController: UIViewController {
         super.viewDidLoad()
 
         self.hoursLabel.text = "\(currentHours) Hour"
+        self.setParkingSpotDetails()
+    }
+    
+    func setParkingSpotDetails() {
+        self.place_title.text = place_name_str
+        self.place_address.text = place_address_str
+        self.parking_spots.text = place_spots_str
+        self.spot_detail_txt.text = spot_details_str
     }
     
     @IBAction func plusBtnTap(_ sender: Any) {
