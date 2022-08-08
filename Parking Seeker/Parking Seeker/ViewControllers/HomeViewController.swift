@@ -91,6 +91,7 @@ class HomeViewController: UIViewController, GMSMapViewDelegate, UICollectionView
                     place_obj["place_address"] = current_data["Address"] as? String
                     place_obj["place_price"] = current_data["Price"] as? String
                     place_obj["place_spots"] = current_data["Spots"] as? Int
+                    place_obj["spots_details"] = current_data["Details"] as? String
                     self.place_items_list.add(place_obj)
                     self.placesCollectionView.reloadData()
                     
@@ -140,6 +141,15 @@ class HomeViewController: UIViewController, GMSMapViewDelegate, UICollectionView
                                 
     @objc func viewDetailsTap() -> Void {
         let ParkingDetailVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "ParkingDetailController") as! ParkingDetailController
+        
+        let place_data = self.place_items_list[indexPath.row] as! NSDictionary
+        let parking_spots = place_data["place_spots"]
+        ParkingDetailVC.place_name_str = place_data["place_name"] as? String
+        ParkingDetailVC.place_price_str = place_data["place_price"] as? String
+        ParkingDetailVC.place_address_str = place_data["place_address"] as? String
+        ParkingDetailVC.place_spots_str = "\(parking_spots!) spots"
+        ParkingDetailVC.spot_details_str = place_data["spot_details"] as? String
+        
         self.navigationController?.pushViewController(ParkingDetailVC, animated: true)
     }
                                          

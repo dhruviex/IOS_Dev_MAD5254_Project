@@ -18,6 +18,13 @@ class ParkingDetailController: UIViewController {
     @IBOutlet weak var place_image: UIImageView!
     @IBOutlet weak var parking_spots: UILabel!
     @IBOutlet weak var spot_detail_txt: UILabel!
+    
+    var place_name_str : String?
+    var place_price_str : String?
+    var place_address_str : String?
+    var place_spots_str : String?
+    var spot_details_str : String?
+    
     var currentHours = 1
     
     override func viewDidLoad() {

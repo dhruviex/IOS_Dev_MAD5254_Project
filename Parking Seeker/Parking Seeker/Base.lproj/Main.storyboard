@@ -1028,6 +1028,9 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="182" height="50"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                                        <connections>
+                                                                            <action selector="callBtnTap:" destination="Lf2-2g-DgY" eventType="touchUpInside" id="Ow2-aP-MTB"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1474,7 +1477,12 @@
                     <connections>
                         <outlet property="hoursLabel" destination="K1O-jf-u21" id="QY4-4V-1VV"/>
                         <outlet property="minusBtn" destination="2dV-5d-uFp" id="LDl-o1-YQy"/>
+                        <outlet property="parking_spots" destination="Ni4-Pb-VOB" id="NHD-9p-t4o"/>
+                        <outlet property="place_address" destination="e4G-Ga-jMy" id="h7V-kA-eQZ"/>
+                        <outlet property="place_image" destination="orh-xx-TRJ" id="Qdf-2N-uC7"/>
+                        <outlet property="place_title" destination="JEI-jz-KAi" id="hOp-rN-0SG"/>
                         <outlet property="plusBtn" destination="E8n-UF-Xui" id="wyG-5u-z6A"/>
+                        <outlet property="spot_detail_txt" destination="ghn-Kv-9Wb" id="Wth-9j-bZZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58k-w8-09B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
