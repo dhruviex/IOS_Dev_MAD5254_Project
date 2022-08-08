@@ -6,13 +6,19 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class ContactUsViewController: UIViewController {
-
+    var ref: DatabaseReference!
+    
+    @IBOutlet weak var emailTxtField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        ref = Database.database().reference()
+        let currentUserData = Auth.auth().currentUser
+        self.emailTxtField.text = currentUserData?.email
     }
     
 
