@@ -1162,6 +1162,9 @@
                                                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                                         <state key="normal" title="Button"/>
                                                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                                                        <connections>
+                                                                                            <action selector="plusBtnTap:" destination="Lf2-2g-DgY" eventType="touchUpInside" id="FPc-1b-SUA"/>
+                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1228,6 +1231,9 @@
                                                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                                         <state key="normal" title="Button"/>
                                                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                                                        <connections>
+                                                                                            <action selector="minusBtnTap:" destination="Lf2-2g-DgY" eventType="touchUpInside" id="jT2-8w-vxy"/>
+                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1465,6 +1471,11 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="hoursLabel" destination="K1O-jf-u21" id="QY4-4V-1VV"/>
+                        <outlet property="minusBtn" destination="2dV-5d-uFp" id="LDl-o1-YQy"/>
+                        <outlet property="plusBtn" destination="E8n-UF-Xui" id="wyG-5u-z6A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58k-w8-09B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
