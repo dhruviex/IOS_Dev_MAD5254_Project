@@ -791,7 +791,7 @@
             <objects>
                 <viewController storyboardIdentifier="ParkingDetailController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lf2-2g-DgY" customClass="ParkingDetailController" customModule="Parking_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ZD-2A-ske">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1020"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUO-pI-uAp">
@@ -845,22 +845,22 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ht-6q-o00">
-                                <rect key="frame" x="0.0" y="114" width="414" height="803"/>
+                                <rect key="frame" x="0.0" y="114" width="414" height="823"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0N-ED-97O">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="803"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="823"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsM-24-CvN">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="803"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="823"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROL-OX-JFi">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qG-ZX-wB8">
-                                                                <rect key="frame" x="0.0" y="25" width="241.5" height="80"/>
+                                                                <rect key="frame" x="0.0" y="25" width="299" height="80"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fairview Mall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEI-jz-KAi">
-                                                                        <rect key="frame" x="15" y="15" width="211.5" height="25"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fairview Mall" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEI-jz-KAi">
+                                                                        <rect key="frame" x="15" y="15" width="269" height="25"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="25" id="5w8-Vg-ouC"/>
                                                                         </constraints>
@@ -874,8 +874,8 @@
                                                                             <constraint firstAttribute="width" secondItem="3Ba-OB-hXt" secondAttribute="height" multiplier="1:1" id="ydk-sb-Fvo"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sheppard Ave E, Toronto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4G-Ga-jMy">
-                                                                        <rect key="frame" x="39" y="45" width="187.5" height="30"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sheppard Ave E, Toronto" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4G-Ga-jMy">
+                                                                        <rect key="frame" x="39" y="45" width="245" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -928,6 +928,7 @@
                                                         <constraints>
                                                             <constraint firstItem="2qG-ZX-wB8" firstAttribute="centerY" secondItem="ROL-OX-JFi" secondAttribute="centerY" id="Bgi-3m-c7L"/>
                                                             <constraint firstAttribute="trailing" secondItem="09E-bJ-9Mp" secondAttribute="trailing" constant="15" id="FIm-ze-yem"/>
+                                                            <constraint firstItem="09E-bJ-9Mp" firstAttribute="leading" secondItem="2qG-ZX-wB8" secondAttribute="trailing" constant="10" id="Gu9-iM-VPc"/>
                                                             <constraint firstItem="2qG-ZX-wB8" firstAttribute="leading" secondItem="ROL-OX-JFi" secondAttribute="leading" id="TTk-9p-tRV"/>
                                                             <constraint firstAttribute="height" constant="130" id="Vw6-QN-gMi"/>
                                                             <constraint firstAttribute="bottom" secondItem="09E-bJ-9Mp" secondAttribute="bottom" constant="20" id="bgd-Xe-mtv"/>
@@ -1028,6 +1029,9 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="182" height="50"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                                        <connections>
+                                                                            <action selector="callBtnTap:" destination="Lf2-2g-DgY" eventType="touchUpInside" id="Ow2-aP-MTB"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1103,7 +1107,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A00-om-GCC">
-                                                        <rect key="frame" x="15" y="265" width="384" height="180"/>
+                                                        <rect key="frame" x="15" y="265" width="384" height="200"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spot Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEo-o7-4Hw">
                                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="25"/>
@@ -1115,7 +1119,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghn-Kv-9Wb">
-                                                                <rect key="frame" x="0.0" y="25" width="384" height="155"/>
+                                                                <rect key="frame" x="0.0" y="25" width="384" height="175"/>
                                                                 <string key="text">Lorem ipsum dolor sit amet. Eos quam internos sed laborum animi aut similique commodi est odit cumque est cumque enim a enim nesciunt ea consequatur quia. Et voluptatibus tenetur qui error veritatis sit repellat cupiditate eum sunt odit ex minus corporis ut corrupti quibusdam qui voluptas illo.</string>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -1130,12 +1134,12 @@
                                                             <constraint firstItem="NEo-o7-4Hw" firstAttribute="top" secondItem="A00-om-GCC" secondAttribute="top" id="Gah-5g-bT4"/>
                                                             <constraint firstAttribute="bottom" secondItem="ghn-Kv-9Wb" secondAttribute="bottom" id="Tyn-Wc-Fol"/>
                                                             <constraint firstAttribute="trailing" secondItem="ghn-Kv-9Wb" secondAttribute="trailing" id="Waa-9d-rji"/>
-                                                            <constraint firstAttribute="height" constant="180" id="eBz-dd-A5a"/>
+                                                            <constraint firstAttribute="height" constant="200" id="eBz-dd-A5a"/>
                                                             <constraint firstItem="ghn-Kv-9Wb" firstAttribute="top" secondItem="NEo-o7-4Hw" secondAttribute="bottom" id="gRI-kT-NEd"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0A-Ft-uxc">
-                                                        <rect key="frame" x="15" y="470" width="384" height="100"/>
+                                                        <rect key="frame" x="15" y="490" width="384" height="100"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgK-CE-nJB">
                                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="25"/>
@@ -1162,6 +1166,9 @@
                                                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                                         <state key="normal" title="Button"/>
                                                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                                                        <connections>
+                                                                                            <action selector="plusBtnTap:" destination="Lf2-2g-DgY" eventType="touchUpInside" id="FPc-1b-SUA"/>
+                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1228,6 +1235,9 @@
                                                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                                         <state key="normal" title="Button"/>
                                                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                                                        <connections>
+                                                                                            <action selector="minusBtnTap:" destination="Lf2-2g-DgY" eventType="touchUpInside" id="jT2-8w-vxy"/>
+                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1275,7 +1285,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebs-Lg-NW2">
-                                                        <rect key="frame" x="15" y="595" width="384" height="100"/>
+                                                        <rect key="frame" x="15" y="615" width="384" height="100"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCo-RL-EK0">
                                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="25"/>
@@ -1373,7 +1383,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2RV-Hn-TgT">
-                                                        <rect key="frame" x="15" y="725" width="384" height="50"/>
+                                                        <rect key="frame" x="15" y="745" width="384" height="50"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAn-ab-MJt">
                                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="55"/>
@@ -1415,7 +1425,7 @@
                                                     <constraint firstItem="Ntw-im-iGL" firstAttribute="top" secondItem="hkX-SY-gSD" secondAttribute="bottom" constant="20" id="PqD-tu-GBR"/>
                                                     <constraint firstItem="2RV-Hn-TgT" firstAttribute="leading" secondItem="bsM-24-CvN" secondAttribute="leading" constant="15" id="Qio-Wt-J76"/>
                                                     <constraint firstItem="ebs-Lg-NW2" firstAttribute="top" secondItem="J0A-Ft-uxc" secondAttribute="bottom" constant="25" id="Qla-Af-pce"/>
-                                                    <constraint firstAttribute="height" constant="803" id="T4G-7F-tMg"/>
+                                                    <constraint firstAttribute="height" constant="823" id="T4G-7F-tMg"/>
                                                     <constraint firstItem="Ntw-im-iGL" firstAttribute="leading" secondItem="bsM-24-CvN" secondAttribute="leading" constant="15" id="ddg-FV-226"/>
                                                     <constraint firstItem="hkX-SY-gSD" firstAttribute="top" secondItem="ROL-OX-JFi" secondAttribute="bottom" constant="10" id="f1D-0f-yWO"/>
                                                     <constraint firstItem="J0A-Ft-uxc" firstAttribute="top" secondItem="A00-om-GCC" secondAttribute="bottom" constant="25" id="fef-fb-Pq1"/>
@@ -1464,11 +1474,21 @@
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="414" height="1000"/>
+                    <size key="freeformSize" width="414" height="1020"/>
+                    <connections>
+                        <outlet property="hoursLabel" destination="K1O-jf-u21" id="QY4-4V-1VV"/>
+                        <outlet property="minusBtn" destination="2dV-5d-uFp" id="LDl-o1-YQy"/>
+                        <outlet property="parking_spots" destination="Ni4-Pb-VOB" id="NHD-9p-t4o"/>
+                        <outlet property="place_address" destination="e4G-Ga-jMy" id="h7V-kA-eQZ"/>
+                        <outlet property="place_image" destination="orh-xx-TRJ" id="Qdf-2N-uC7"/>
+                        <outlet property="place_title" destination="JEI-jz-KAi" id="hOp-rN-0SG"/>
+                        <outlet property="plusBtn" destination="E8n-UF-Xui" id="wyG-5u-z6A"/>
+                        <outlet property="spot_detail_txt" destination="ghn-Kv-9Wb" id="Wth-9j-bZZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58k-w8-09B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1434.7826086956522" y="1528.7946428571429"/>
+            <point key="canvasLocation" x="1433" y="1570"/>
         </scene>
         <!--Parking Pass Controller-->
         <scene sceneID="aUF-8R-W0I">
@@ -2039,7 +2059,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bql-OG-RrG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2305.7971014492755" y="1528.7946428571429"/>
+            <point key="canvasLocation" x="2304" y="1563"/>
         </scene>
         <!--Change Password Controller-->
         <scene sceneID="FHy-sR-ohU">

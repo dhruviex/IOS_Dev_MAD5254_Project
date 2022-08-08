@@ -91,6 +91,7 @@ class HomeViewController: UIViewController, GMSMapViewDelegate, UICollectionView
                     place_obj["place_address"] = current_data["Address"] as? String
                     place_obj["place_price"] = current_data["Price"] as? String
                     place_obj["place_spots"] = current_data["Spots"] as? Int
+                    place_obj["spot_details"] = current_data["Details"] as? String
                     self.place_items_list.add(place_obj)
                     self.placesCollectionView.reloadData()
                     
@@ -134,12 +135,22 @@ class HomeViewController: UIViewController, GMSMapViewDelegate, UICollectionView
         let parking_spots = place_data["place_spots"]
         cell.place_spots.text = "\(parking_spots!) spots"
         
+        cell.place_details_btn.tag = indexPath.row
         cell.place_details_btn.addTarget(self, action: #selector(viewDetailsTap), for: .touchUpInside)
         return cell
     }
                                 
-    @objc func viewDetailsTap() -> Void {
+    @objc func viewDetailsTap(_ button: UIButton) -> Void {
         let ParkingDetailVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "ParkingDetailController") as! ParkingDetailController
+        
+        let place_data = self.place_items_list[button.tag] as! NSDictionary
+        let parking_spots = place_data["place_spots"]
+        ParkingDetailVC.place_name_str = place_data["place_name"] as? String
+        ParkingDetailVC.place_price_str = place_data["place_price"] as? String
+        ParkingDetailVC.place_address_str = place_data["place_address"] as? String
+        ParkingDetailVC.place_spots_str = "\(parking_spots!) spots"
+        ParkingDetailVC.spot_details_str = place_data["spot_details"] as? String
+        
         self.navigationController?.pushViewController(ParkingDetailVC, animated: true)
     }
                                          
