@@ -4986,6 +4986,11 @@
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="emailTxt" destination="ptC-v8-G4G" id="cX8-3l-qdw"/>
+                        <outlet property="fullNameTxtField" destination="jBL-sm-OkJ" id="rLM-mj-wFC"/>
+                        <outlet property="mobileTxt" destination="WYk-jC-AKN" id="MKv-E5-Y4D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QLZ-P9-3NB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5439,6 +5444,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="50"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="signoutBtnTap:" destination="YcC-Cl-AI1" eventType="touchUpInside" id="ZMv-cx-XlA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
