@@ -13,6 +13,11 @@ class ParkingDetailController: UIViewController {
     @IBOutlet weak var minusBtn: UIButton!
     @IBOutlet weak var hoursLabel: UILabel!
     
+    @IBOutlet weak var place_title: UILabel!
+    @IBOutlet weak var place_address: UILabel!
+    @IBOutlet weak var place_image: UIImageView!
+    @IBOutlet weak var parking_spots: UILabel!
+    @IBOutlet weak var spot_detail_txt: UILabel!
     var currentHours = 1
     
     override func viewDidLoad() {
@@ -38,6 +43,10 @@ class ParkingDetailController: UIViewController {
             }
             self.hoursLabel.text = hoursText
         }
+    }
+    
+    @IBAction func callBtnTap(_ sender: Any) {
+        
     }
     
     @IBAction func confirmBookingTap(_ sender: Any) {
